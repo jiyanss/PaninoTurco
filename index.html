@@ -1009,7 +1009,8 @@ function renderSales(){
     bar.classList.add('show');
   };
   updateCharge();
-  $('#cbClear').onclick=()=>{ ui.counter={}; renderSales(); };
+   $('#cbClear').onclick=()=>{ ui.counter={}; renderSales(); };
+icons();
   $('#cbGo').onclick=()=>{
     const entries=Object.entries(ui.counter).filter(([,q])=>q>0);
     if(!entries.length)return;
